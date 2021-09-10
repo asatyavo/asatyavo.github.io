@@ -68,6 +68,17 @@ input[type=submit] {
 	background-color: #09920f;
   }
 
+  input[type=text], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid rgb(48, 54, 88);
+	border-radius: 4px;
+	box-sizing: border-box;
+  }
+  
+
 
 nav
 {
