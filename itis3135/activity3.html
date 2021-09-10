@@ -80,11 +80,11 @@
 		<h2>Interested in our newsletter? Sign up now to receive info!</h2>
 		<form action="#">
             <label for="name">Full name:</label><br>
-            <input type="text" id="name" name="name"><br>
+            <input type="text" id="name" name="name" required><br>
             <label for="email">Email address:</label><br>
             <input type="text" id="email" name="mail"><br>
             <label for="num">Phone number:</label><br>
-            <input type="text" id="num" name="phone"><br><br>
+            <input type="text" id="num" name="phone" placeholder="+1"><br><br>
             <p>Age:</p>
             <input type="radio" id="old" name="age" value="Above 18">
             <label for="old">Above 18</label><br>
@@ -93,7 +93,7 @@
             <input type="radio" id="javascript" name="fav_language" value="JavaScript">
             <label for="javascript">JavaScript</label><br><br>
             <label for="job">Are you interested in learning about job openings with us?:</label>
-            <select id="job" name="jobs">
+            <select id="job" name="jobs" size = "5">
             <option value="y">Yes</option>
             <option value="n">No</option>
 </select><br><br>
