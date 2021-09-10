@@ -3,8 +3,8 @@
 body
 {
 	font-family: georgia;
-	color: #e49dc9 ;
-	background-color: #05044d;
+	color: #42062b ;
+	background-color: #86add1;
 	margin-left: 75px;
 	margin-right: 75px;
 
@@ -36,5 +36,5 @@ th, td
 }
 tbody tr:nth-child(odd) td
 {
-    background-color: rgb(7, 5, 129);
+    background-color: rgb(0, 54, 104);
 }
