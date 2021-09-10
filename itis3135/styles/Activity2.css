@@ -2,8 +2,12 @@
 
 body
 {
-    width: 750px;
-    margin: 0 auto;
+	font-family: georgia;
+	color: #e49dc9 ;
+	background-color: #05044d;
+	margin-left: 75px;
+	margin-right: 75px;
+
 }
 table
 {
