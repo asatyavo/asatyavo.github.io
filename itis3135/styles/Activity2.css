@@ -9,6 +9,13 @@ body
 	margin-right: 75px;
 
 }
+h1, h2
+{
+	color: FFefbd;
+	font-family: georgia;
+	text-align: center;
+}
+
 table
 {
     border-collapse: collapse;
