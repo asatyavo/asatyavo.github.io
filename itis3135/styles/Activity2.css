@@ -3,8 +3,8 @@
 body
 {
 	font-family: georgia;
-	color: #42062b ;
-	background-color: #86add1;
+	color: #fafafa ;
+	background-color: #031f38;
 	margin-left: 75px;
 	margin-right: 75px;
 
@@ -23,7 +23,7 @@ table
 }
 thead
 {
-    background-color: rgb(104, 4, 4);
+    background-color: rgb(114, 1, 1);
 }
 th, td
 {
@@ -36,5 +36,5 @@ th, td
 }
 tbody tr:nth-child(odd) td
 {
-    background-color: rgb(0, 54, 104);
+    background-color: rgb(172, 26, 26);
 }
