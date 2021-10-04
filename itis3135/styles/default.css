@@ -6,7 +6,7 @@ body
 {
 	font-family: georgia;
 	color: #eba2cf ;
-	background-color: #171736;
+	background-color: #3a3a8d;
 	margin-left: 75px;
 	margin-right: 75px;
 }
@@ -16,6 +16,12 @@ table
     border-collapse: collapse;
     margin: 50px;
 }
+
+button{
+	background-color:rgb(203, 138, 230);
+	color:rgb(60, 10, 102);
+}
+
 thead
 {
     background-color: rgb(114, 1, 1);
