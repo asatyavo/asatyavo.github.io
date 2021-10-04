@@ -43,13 +43,13 @@ tbody tr:nth-child(odd) td
 header, footer
 {
 	text-align: center;
-	color: FFefbd;
+	color: whitesmoke;
 	font-weight: bold;
 }
 
 h1, h2, h3
 {
-	color: FFefbd;
+	color: whitesmoke;
 	font-family: georgia;
 	text-align: center;
 }
