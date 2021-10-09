@@ -24,6 +24,117 @@ keys.addEventListener('click', e=>{
                 
 
             }
+            else{
+                display.textContent = displayValue+keyValue 
+            }
+            
         }
+        if(type ==='decimal' ){
+            if (!displayValue.includes('.')) {
+                display.textContent = displayValue + '.'
+              }
+              if (previousKeyType === 'operator' || previousKeyType === 'calculate'){
+                  display.textContent = '0.'
+              }
+            
+        }
+
+        if(type === 'clear'){
+            display.textContent ='0'
+        }
+        
+        
+        
+        if(type==='operator'){
+            const operatorKeys = keys.querySelectorAll('[data-type="operator"]')
+            operatorKeys.forEach(el=>{el.dataset.state=''})
+            key.dataset.state = 'selected'
+
+            calculator.dataset.firstNumber = displayValue
+            calculator.dataset.operation = key.dataset.key
+
+            
+        }
+
+        if(type === 'equal'){
+
+            const firstNumber = parseFloat(calculator.dataset.firstNumber)
+            const operator = calculator.dataset.operation
+            const secondNumber = parseFloat(displayValue)
+            console.log(firstNumber, operator, secondNumber)
+            let result =''
+
+            if(firstNumber){
+                if(operator === 'add') result = firstNumber + secondNumber
+            if(operator ==='subtract') result = firstNumber - secondNumber
+            if(operator ==='times') result = firstNumber * secondNumber
+            if(operator === 'divide') result = firstNumber / secondNumber
+            console.log(result)
+            display.textContent = result
+            }
+            
+
+          //  firstNumber + SecondNumber
+          //  firstNumber - firstNumber
+          //  firstNumber * secondNumerb
+          //  firstnumber / secondNumber
+        
+        
+        }
+        if (type === 'clear' && key.textContent !== 'AC'){
+           key.textContent = 'AC' 
+        } 
+        if (type !== 'clear') {
+            const clearButton = calculator.querySelector('[data-type=clear]')  
+            clearButton.textContent = 'CE'
+          }
+
+        if(type === 'clear'&& key.textContent==='AC'){
+            calculator.dataset.firstNumber =''
+            calculator.dataset.operation = ''
+            calculator.dataset.previousKeyType = ''
+        }
+        calculator.dataset.previousKeyType = type
     }
-)
+})
+/*
+function calculate(e){
+    const calculator = document.querySelector(".calculator")
+    const keys = calculator.querySelector(".calculator__keys")
+    
+    
+
+    keys.addEventListener('click',e=>{
+        if(e.target.matches('button')){
+            // do something
+        }
+    })
+    
+    const key = e.target
+    const action = key.dataset.action
+    if(!action){
+        console.log('number key!')
+    }
+    
+    if(
+        action === 'add'||
+        action === 'subtract'||
+        action === 'multiply'||
+        action === 'divide'
+    ){
+        console.log('operator key!')
+    }
+    if(action === 'decimal'){
+        console.log('decimal key!')
+    }
+    if(action === 'clear'){
+        console.log('clear key!')
+    }
+    if(action=== 'calculate'){
+        console.log("equal key")
+    }
+     
+
+ 
+}
+*/
