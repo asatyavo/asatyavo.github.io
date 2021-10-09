@@ -160,7 +160,7 @@ nav
   
   .calculator__keys > *:active::before,
   .calculator__keys > .is-depressed::before {
-	background-color: rgba(143, 61, 146, 0.2);
+	background-color: rgba(255, 255, 255, 0.2);
 	bottom: 0;
 	box-shadow: 0 0 6px 0 rgba(211, 34, 211, 0.5) inset;
 	content: "";
