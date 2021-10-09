@@ -81,15 +81,15 @@ keys.addEventListener('click', e=>{
         
         
         }
-        if (type === 'clear' && key.textContent !== 'AC'){
-           key.textContent = 'AC' 
+        if (type === 'clear' && key.textContent !== 'Clear'){
+           key.textContent = 'Clear' 
         } 
         if (type !== 'clear') {
             const clearButton = calculator.querySelector('[data-type=clear]')  
             clearButton.textContent = 'CE'
           }
 
-        if(type === 'clear'&& key.textContent==='AC'){
+        if(type === 'clear'&& key.textContent==='Clear'){
             calculator.dataset.firstNumber =''
             calculator.dataset.operation = ''
             calculator.dataset.previousKeyType = ''
