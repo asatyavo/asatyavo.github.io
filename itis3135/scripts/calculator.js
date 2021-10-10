@@ -72,37 +72,23 @@ keys.addEventListener('click', e=>{
             console.log(result)
             display.textContent = result
             }
-            
-
-          //  firstNumber + SecondNumber
-          //  firstNumber - firstNumber
-          //  firstNumber * secondNumerb
-          //  firstnumber / secondNumber
-        
-        
         }
-        if (type === 'clear' && key.textContent !== 'Clear'){
-           key.textContent = 'Clear' 
+
+        if (type === 'clear' && key.textContent !== 'AC'){
+           key.textContent = 'AC' 
         } 
+
         if (type !== 'clear') {
             const clearButton = calculator.querySelector('[data-type=clear]')  
             clearButton.textContent = 'CE'
           }
 
-        if(type === 'clear'&& key.textContent==='Clear'){
+        if(type === 'clear'&& key.textContent==='AC'){
             calculator.dataset.firstNumber =''
             calculator.dataset.operation = ''
             calculator.dataset.previousKeyType = ''
         }
+        
         calculator.dataset.previousKeyType = type
     }
-    
-    if (
-        action === 'add' ||
-        action === 'subtract' ||
-        action === 'multiply' ||
-        action === 'divide'
-      ) {
-        key.classList.add('is-depressed')
-      }
 })
