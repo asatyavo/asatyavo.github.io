@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="styles/default.css" rel="stylesheet" type="text/css" >
+	<title>Simran's Arrays: ITIS 3135</title>
+</head>
+
+<body>
+	<header>
+			<h1><em>Simran Satyavolu</em> : ITIS3135</h1>
+	</header>
+	<nav>
+		<a href="introduction.html">Introduction</a> 
+        ||
+        <a href="index.html">Index</a> 
+        ||
+		<a href="tables.html">Tables</a>
+        ||
+        <a href="activity3.html">HTML Forms</a>
+        ||
+        <a href="website_evaluations.html">Website Evaluations</a>
+        ||
+        <a href="brand-sleepy-seahorse.html">Brand</a>
+        ||
+        <a href = "first-scripts.html">First Script</a>
+        ||
+        <a href = "polygon.html">Name the Polygon</a>
+        ||
+        <a href = "calculator_try.html">Calculator Try</a>
+        ||
+        <a href = "calculator_fcc.html">Official Calculator Page</a>
+	</nav>	
+
+	<main>
+		<h2>Activity #8: Arrays</h2>
+        <p>Choose an employee name below and enter their salary. Do this for every employee listed.</p>
+        
+        <select id ="people">
+            <option>Tony Stark</option>
+            <option>Peter Parker</option>
+            <option>Bruce Banner</option>
+            <option>Steve Rogers</option>
+        </select>
+        <br>
+
+        <button onclick=validateEntry() style="height:65px; width:500px">Click here to enter the salary for the selected individual. </button>
+        
+
+        <br>
+        <button onclick=displayResults() style="height:65px; width:500px" >Click Here to show the average and highest salaries. </button>
+        
+        <div id = "results">
+            
+            <p id = "averageResult">Average:</p>
+            <p id="maxResult">Highest:</p>   
+        </div>
+
+        
+
+        <br>
+        <button onclick=displaySalary() style="height:65px; width:500px;">Click Here to enter data in the table.</button>
+        
+        <table id = "results_table" >
+            <tbody>
+                <tr>
+                    <th>Name</th>
+                    <th>Salary in $</th>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td style="text-align: right;">X</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td style="text-align: right;">X</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td  style="text-align: right;">X</td>
+                </tr>
+                <tr>
+                    <td>X</td>
+                    <td style="text-align: right;">X</td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <div class = "clear"></div>
+        
+        
+    </main>
+
+    <footer>
+        <nav>
+            <a href= "http://webpages.uncc.edu/asatyavo/" target="_blank">Charlotte.edu</a> &#9553;
+            <a href="https://github.com/asatyavo" target="_blank">Github</a> &#9553;
+            <a href="https://asatyavo.github.io/" target="_blank">Github.io</a> &#9553;
+            <a href="https://asatyavo.github.io/itis3135/" target="_blank">ITIS 3135 Github Pages</a> &#9553;
+            <a href="https://www.freecodecamp.org/simsatya" target="_blank">freeCodeCamp</a> &#9553;
+            <a href="https://www.linkedin.com/in/simransatyavolu/" target="_blank">LinkedIn</a> &#9553;
+        </nav>
+        <br />
+        <p>Page built by FirelordSim</p>
+	
+		<a href="https://validator.w3.org/check?uri=referer">
+			<img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator"></a>
+
+		<a href="https://jigsaw.w3.org/css-validator/check/referer">
+			<img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator"></a>
+    </footer>
+</body>
+</html>
