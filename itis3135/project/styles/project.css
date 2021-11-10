@@ -5,8 +5,8 @@
 body
 {
 	font-family: georgia;
-	color: #bd5252 ;
-	background-color: #000000;
+	color: #da8989 ;
+	background-color: #383737;
 	margin-left: 75px;
 	margin-right: 75px;
 }
@@ -37,7 +37,7 @@ th, td
 }
 tbody tr:nth-child(odd) td
 {
-    background-color: rgb(172, 26, 26);
+    background-color: rgb(165, 65, 65);
 }
 
 header, footer
@@ -63,7 +63,7 @@ h3
 a
 {
 	text-decoration: none;
-	color: #b5d6b2;
+	color: #cc4b4b;
 }
 
 a:hover
@@ -83,7 +83,7 @@ figcaption
 
 input[type=submit] {
 	width: 100%;
-	background-color: #0c6b0f;
+	background-color: #cf5a5a;
 	color: white;
 	padding: 14px 20px;
 	margin: 8px 0;
@@ -93,7 +93,7 @@ input[type=submit] {
   }
   
   input[type=submit]:hover {
-	background-color: #09920f;
+	background-color: #9c9c9c;
   }
 
   input[type=text], select {
@@ -101,7 +101,7 @@ input[type=submit] {
 	padding: 12px 20px;
 	margin: 8px 0;
 	display: inline-block;
-	border: 1px solid rgb(48, 54, 88);
+	border: 1px solid rgb(45, 53, 100);
 	border-radius: 4px;
 	box-sizing: border-box;
   }
@@ -183,4 +183,26 @@ nav
   }
   [data-state="selected"]{
 	  background-color: rgb(74, 5, 92);
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
   }
