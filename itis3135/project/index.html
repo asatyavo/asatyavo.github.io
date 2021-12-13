@@ -4,6 +4,10 @@
     <head>
         <meta charset="UTF-8">
         <link href="styles/project.css" rel="stylesheet" type="text/css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+        <script src="scripts/index.js"></script>
         <title>The Red ♛ Home</title>
     </head>
     <body>
@@ -27,16 +31,13 @@
             </figure>
             <h3 class="align-center">Unisex Clothing and Accessories</h3>
             <h4 class="align-center">From T-shirts to tote bags, The Red is a unisex clothing and accessory store that aims to allow everyone to find their signature alternative style. Check out other pages on this site for more information on our products and how to get in contact with us.</h4>
-            <div class="row">
-                <div class="column">
-                    <img src="images/tote1.jpg" style="width:100%"/>
-                </div>
-                <div class="column">
-                    <img src="images/tee1.jpg" style="width:100%"/>
-                </div>
-                <div class="column">
-                    <img src="images/pant1.jpg" style="width:100%"/>
-                </div>
+
+            <div class="bxslider">
+                <ul id="slider">
+                    <li><img src="images/tote1.jpg" style="width:100%"/></li>
+                    <li><img src="images/tee1.jpg" style="width:100%"/></li>
+                    <li><img src="images/pant1.jpg" style="width:100%"/></li>
+                </ul>
             </div>
         </main>
         <footer>
