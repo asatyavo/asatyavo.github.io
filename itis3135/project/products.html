@@ -4,6 +4,10 @@
     <head>
         <meta charset="UTF-8">
         <link href="styles/project.css" rel="stylesheet" type="text/css">
+        <link href="css/lightbox.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"> </script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="products.js"></script>
         <title>The Red ♛ About</title>
     </head>
     <body>
@@ -19,39 +23,8 @@
         </nav>
         <main>
             <h2>Products</h2>
-            <div class="row">
-                <div class="column">
-                    <img src="images/tote1.jpg" style="width:100%"/>
-                </div>
-                <div class="column">
-                    <img src="images/tee1.jpg" style="width:100%"/>
-                </div>
-                <div class="column">
-                    <img src="images/pant1.jpg" style="width:100%"/>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <img src="images/tote2.jpg" style="width:100%"/>
-                </div>
-                <div class="column">
-                    <img src="images/tee2.jpg" style="width:100%"/>
-                </div>
-                <div class="column">
-                    <img src="images/pant2.jpg" style="width:100%"/>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <img src="images/tote3.jpg" style="width:100%"/>
-                </div>
-                <div class="column">
-                    <img src="images/tee3.jpg" style="width:100%"/>
-                </div>
-                <div class="column">
-                    <img src="images/pant3.jpg" style="width:100%"/>
-                </div>
-            </div>
+            <div id="pictures" class="pic"></div>
+
         </main>
         <footer>
             <figure class="align-center">
